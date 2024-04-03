@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+// Defines the possible event types.
+enum EventType {
+    CREATE = 0;
+    ASSIGN = 1;
+}

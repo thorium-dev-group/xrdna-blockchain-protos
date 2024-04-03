@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+enum AdjustSignerAction {
+    ADD = 0;
+    REMOVE = 1;
+}

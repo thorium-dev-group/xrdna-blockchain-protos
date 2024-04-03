@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "dto/event_header.proto";
+import "dto/adjust_signer_action.proto";
+
+message AdjustSignerEvent {
+    EventHeader header = 1;
+    string vector_address = 2;
+    string signer_address = 3;
+    AdjustSignerAction action = 4;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+// A generic message wrapper that includes a 
+// payload and its cryptographic signature.
+message SignedMessageEnvelope {
+    // The serialized payload message.
+    // The payload should be a serialized CreateEvent, AdjustSignerEvent, etc.
+    bytes payload = 1;  
+    // The cryptographic signature of the payload.
+    bytes signature = 2; 
+}

@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+import "dto/event_header.proto";
+
+message CreateEvent {
+    EventHeader header = 1;
+    string vector_address = 2;
+    string primary_signer = 3;
+    string home_url = 4;
+}

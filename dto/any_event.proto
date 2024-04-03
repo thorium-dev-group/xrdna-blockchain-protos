@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+import "dto/event_header.proto";
+
+message AnyEvent {
+    EventHeader header = 1;
+}

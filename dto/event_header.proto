@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+import "dto/event_type.proto";
+
+message EventHeader {
+    EventType type = 1;
+    // expects snowflake id
+    fixed64 id = 2;
+}

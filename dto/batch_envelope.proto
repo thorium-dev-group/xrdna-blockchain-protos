@@ -1,0 +1,10 @@
+syntax="proto3";
+
+import "dto/signed_message_envelope.proto";
+
+message BatchEnvelope {
+    string batch_number = 1;
+    string root_hash = 2;
+    string commitment_txn_hash = 3;
+    repeated SignedMessageEnvelope signed_message_envelopes = 4;
+}

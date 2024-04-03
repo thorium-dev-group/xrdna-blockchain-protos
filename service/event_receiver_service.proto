@@ -1,0 +1,20 @@
+
+syntax = "proto3";
+
+package xrdna.blockchain;
+
+import "dto/signed_message_envelope.proto";
+
+message HandleOneResponse {
+    // TODO: determine if any response is needed
+}
+
+message HandleManyResponse {
+    // TODO: determine if any response is needed
+}
+
+service EventReceiverService {
+    rpc echo (SignedMessageEnvelope) returns (SignedMessageEnvelope) {}
+    rpc handleOne (SignedMessageEnvelope) returns (HandleOneResponse) {}
+    rpc handleMany (stream SignedMessageEnvelope) returns (stream HandleManyResponse) {}
+}
