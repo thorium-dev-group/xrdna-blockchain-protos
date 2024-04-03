@@ -3,9 +3,21 @@ syntax = "proto3";
 import "dto/event_header.proto";
 import "dto/adjust_signer_action.proto";
 
+package xrdna.blockchain;
+
+/**
+Used to add / remove a signer address from a platform
+*/
 message AdjustSignerEvent {
+    // The header for the event
     EventHeader header = 1;
+
+    // The vector address of the platform that is being adjusted
     string vector_address = 2;
+
+    // The address of the signer that is being added / removed
     string signer_address = 3;
+
+    // The action to take on the signer
     AdjustSignerAction action = 4;
 }

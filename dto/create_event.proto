@@ -2,9 +2,21 @@ syntax = "proto3";
 
 import "dto/event_header.proto";
 
+package xrdna.blockchain;
+
+/**
+Used to create a new Platform
+*/
 message CreateEvent {
+    // The header for the event
     EventHeader header = 1;
+
+    // The vector address of the platform
     string vector_address = 2;
+
+    // The primary signer of the platform
     string primary_signer = 3;
+
+    // The home url of the platform
     string home_url = 4;
 }

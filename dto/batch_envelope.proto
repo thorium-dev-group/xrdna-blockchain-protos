@@ -2,6 +2,12 @@ syntax="proto3";
 
 import "dto/signed_message_envelope.proto";
 
+package xrdna.blockchain;
+
+/**
+* A batch envelope is a collection of signed message envelopes that are
+* grouped together to be processed as a single unit.
+*/
 message BatchEnvelope {
     string batch_number = 1;
     string root_hash = 2;

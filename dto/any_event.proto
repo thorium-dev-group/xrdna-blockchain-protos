@@ -2,6 +2,12 @@ syntax = "proto3";
 
 import "dto/event_header.proto";
 
+package xrdna.blockchain;
+
+/**
+* Generic event message. Used as a utility type to help detect the 
+* actual event type.
+*/
 message AnyEvent {
     EventHeader header = 1;
 }

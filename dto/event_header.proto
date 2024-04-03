@@ -2,6 +2,11 @@ syntax = "proto3";
 
 import "dto/event_type.proto";
 
+package xrdna.blockchain;
+
+/**
+* Header for all events.
+*/
 message EventHeader {
     EventType type = 1;
     // expects snowflake id

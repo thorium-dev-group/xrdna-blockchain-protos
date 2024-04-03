@@ -1,5 +1,8 @@
 syntax = "proto3";
 
+package xrdna.blockchain;
+
+/** Actions that can be taken on a signer for a given platform. */
 enum AdjustSignerAction {
     ADD = 0;
     REMOVE = 1;

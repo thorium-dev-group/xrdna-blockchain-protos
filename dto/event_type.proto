@@ -1,7 +1,11 @@
 syntax = "proto3";
 
-// Defines the possible event types.
+package xrdna.blockchain;
+
+/** Defines the possible event types. */
 enum EventType {
+    // Create a new platform
     CREATE = 0;
+    // Adjust the available platform signer accounts
     ASSIGN = 1;
 }
