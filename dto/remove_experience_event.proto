@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+import "dto/event_header.proto";
+
+package xrdna.blockchain;
+
+/**
+* Remove an experience from a platform
+*/
+message RemoveExperienceEvent {
+    // The header for the event
+    EventHeader header = 1;
+
+    string vector_address = 2;
+    
+    string experience_vector_address = 3;
+
+    bytes platform_signature = 4;
+}

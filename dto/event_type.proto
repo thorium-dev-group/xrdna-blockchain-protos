@@ -6,6 +6,26 @@ package xrdna.blockchain;
 enum EventType {
     // Create a new platform
     CREATE = 0;
+
     // Adjust the available platform signer accounts
-    ASSIGN = 1;
+    ADJUST_SIGNER = 1;
+
+    // Add a new platform experience vector address and its content url (assuming URL is correct delivery). XRDNA auth is required to assign experience vector address.
+    ADD_EXPERIENCE = 2;
+
+    // Adjust an existing experience address’s content url
+    UPDATE_EXPERIENCE_URL = 3;
+
+    // Remove an experience from a platform
+    REMOVE_EXPERIENCE = 4;
+
+    // Adjust a platform’s home url
+    ADJUST_HOME_URL = 5;
+
+    // Platform adding/removing support to portal into another experience from a source experience. The source and dest experiences must be valid/registered experience addresses.
+    ADD_PORTAL = 6;
+
+    // Batch of individually signed records that should be used for update in the order they appear in the batch
+    BATCH_RECORDS = 7;
+
 }

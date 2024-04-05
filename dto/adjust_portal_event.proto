@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+import "dto/event_header.proto";
+
+package xrdna.blockchain;
+
+/**
+* Platform adding/removing support to portal into another experience from a source experience. The source and dest experiences must be valid/registered experience addresses.
+*/
+message AdjustPortalEvent {
+    // The header for the event
+    EventHeader header = 1;
+
+    string source_vector_address = 2;
+
+    string destination_vector_address = 3;
+    
+    bytes platform_signature = 4;
+}

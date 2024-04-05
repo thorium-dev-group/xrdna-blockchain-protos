@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+import "dto/event_header.proto";
+
+package xrdna.blockchain;
+
+/**
+* Adjust an existing experience address’s content url
+*/
+message UpdateExperienceEvent {
+    // The header for the event
+    EventHeader header = 1;
+
+    string vector_address = 2;
+
+    string experience_vector_address = 3;
+
+    string url = 4;
+
+    bytes platform_signature = 5;
+}

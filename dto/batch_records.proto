@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+import "dto/event_header.proto";
+
+package xrdna.blockchain;
+
+/**
+* Batch of individually signed records that should be used for update in the order they appear in the batch
+*/
+message BatchRecords {
+    // The header for the event
+    EventHeader header = 1;
+
+    repeated bytes records = 2;
+    
+    bytes platform_signature = 3;
+}

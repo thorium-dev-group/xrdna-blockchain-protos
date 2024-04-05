@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+import "dto/event_header.proto";
+
+package xrdna.blockchain;
+
+/**
+* Add a new platform experience vector address and its content url (assuming URL is correct delivery). XRDNA auth is required to assign experience vector address.
+*/
+message AddExperienceEvent {
+    // The header for the event
+    EventHeader header = 1;
+
+    string vector_address = 2;
+
+    string url = 3;
+
+    bytes platform_signature = 4;
+}
