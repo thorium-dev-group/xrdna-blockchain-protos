@@ -14,7 +14,4 @@ message SignedMessageEnvelope {
 
     // The cryptographic signature of the payload.
     string signature = 2;
-
-    // Used to attach debug / tracing metadata to message
-    map<string, string> metadata = 3;
 }
