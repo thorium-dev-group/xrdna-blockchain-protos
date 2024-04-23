@@ -11,8 +11,10 @@ message AddExperienceEvent {
     // The header for the event
     EventHeader header = 1;
 
+    // Specified by XRDNA
     string vector_address = 2;
 
+    // Specified by the platform
     string url = 3;
 
     bytes platform_signature = 4;
