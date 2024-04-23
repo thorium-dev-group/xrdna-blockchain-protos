@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package xrdna.blockchain;
+
+/** 
+ * The TelemetryEnvelope is a wrapper around the serialized payload of a telemetry event.
+ */
+message TelemetryEnvelope {
+    // The serialized payload (e.g., CreateEvent, AdjustSignerEvent, etc.)
+    bytes payload = 1;  
+
+    // The traceparent header value
+    string traceparent = 2;
+
+    // The tracestate header value
+    string tracestate = 3;
+}
