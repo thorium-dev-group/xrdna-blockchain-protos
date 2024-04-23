@@ -11,6 +11,10 @@ package xrdna.blockchain;
 message SignedMessageEnvelope {
     // The serialized payload (e.g., CreateEvent, AdjustSignerEvent, etc.)
     bytes payload = 1;  
+
     // The cryptographic signature of the payload.
-    bytes signature = 2; 
+    string signature = 2;
+
+    // Used to attach debug / tracing metadata to message
+    map<string, string> metadata = 3;
 }
