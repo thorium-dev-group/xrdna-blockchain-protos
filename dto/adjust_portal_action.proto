@@ -4,6 +4,6 @@ package xrdna.blockchain;
 
 /** Actions that can be taken for a portal on a given platform. */
 enum AdjustPortalAction {
-    ADD = 0;
-    REMOVE = 1;
+    ADD_PORTAL = 0;
+    REMOVE_PORTAL = 1;
 }
