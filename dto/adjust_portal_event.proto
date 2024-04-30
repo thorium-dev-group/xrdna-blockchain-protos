@@ -1,6 +1,7 @@
 syntax = "proto3";
 
 import "dto/event_header.proto";
+import "dto/adjust_portal_action.proto";
 
 package xrdna.blockchain;
 
@@ -14,6 +15,7 @@ message AdjustPortalEvent {
     string source_vector_address = 2;
 
     string destination_vector_address = 3;
-    
-    bytes platform_signature = 4;
+
+    // The action to take on the portal
+    AdjustPortalAction action = 4;
 }

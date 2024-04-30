@@ -5,13 +5,13 @@ import "dto/event_header.proto";
 package xrdna.blockchain;
 
 /**
-* Remove an experience from a platform
+* Adjust a platform’s home url
 */
-message RemoveExperienceEvent {
+message UpdateHomeUrlEvent {
     // The header for the event
     EventHeader header = 1;
 
     string vector_address = 2;
     
-    string experience_vector_address = 3;
+    string url = 3;
 }

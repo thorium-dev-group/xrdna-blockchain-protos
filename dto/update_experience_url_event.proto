@@ -5,15 +5,15 @@ import "dto/event_header.proto";
 package xrdna.blockchain;
 
 /**
-* Adjust a platform’s home url
+* Adjust an existing experience address’s content url
 */
-message AdjustHomeUrlEvent {
+message UpdateExperienceUrlEvent {
     // The header for the event
     EventHeader header = 1;
 
     string vector_address = 2;
-    
-    string url = 3;
 
-    bytes platform_signature = 4;
+    string experience_vector_address = 3;
+
+    string url = 4;
 }
