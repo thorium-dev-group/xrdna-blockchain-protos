@@ -12,7 +12,7 @@ message AdjustPortalEvent {
     // The header for the event
     EventHeader header = 1;
 
-    string source_vector_address = 2;
+    string home_vector_address = 2;
 
     string destination_vector_address = 3;
 
