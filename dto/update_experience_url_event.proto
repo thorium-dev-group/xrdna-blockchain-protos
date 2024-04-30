@@ -7,15 +7,13 @@ package xrdna.blockchain;
 /**
 * Adjust an existing experience address’s content url
 */
-message UpdateExperienceEvent {
+message UpdateExperienceUrlEvent {
     // The header for the event
     EventHeader header = 1;
 
-    string vector_address = 2;
+    string home_vector_address = 2;
 
     string experience_vector_address = 3;
 
     string url = 4;
-
-    bytes platform_signature = 5;
 }

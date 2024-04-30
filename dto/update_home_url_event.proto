@@ -7,13 +7,11 @@ package xrdna.blockchain;
 /**
 * Adjust a platform’s home url
 */
-message AdjustHomeUrlEvent {
+message UpdateHomeUrlEvent {
     // The header for the event
     EventHeader header = 1;
 
     string vector_address = 2;
     
     string url = 3;
-
-    bytes platform_signature = 4;
 }

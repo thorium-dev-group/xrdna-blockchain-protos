@@ -11,9 +11,7 @@ message RemoveExperienceEvent {
     // The header for the event
     EventHeader header = 1;
 
-    string vector_address = 2;
+    string home_vector_address = 2;
     
     string experience_vector_address = 3;
-
-    bytes platform_signature = 4;
 }

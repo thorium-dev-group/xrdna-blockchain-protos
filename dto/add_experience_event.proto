@@ -16,6 +16,4 @@ message AddExperienceEvent {
 
     // Specified by the platform
     string url = 3;
-
-    bytes platform_signature = 4;
 }

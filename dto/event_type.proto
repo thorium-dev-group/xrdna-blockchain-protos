@@ -21,13 +21,13 @@ enum EventType {
     // Remove an experience from a platform
     REMOVE_EXPERIENCE = 4;
 
-    // Adjust a platform’s home url
-    ADJUST_HOME_URL = 5;
+    // Update a platform’s home url
+    UPDATE_HOME_URL = 5;
 
     // Platform adding/removing support to portal into another experience from a
     //  source experience. The source and dest experiences must be 
     // valid/registered experience addresses.
-    ADD_PORTAL = 6;
+    ADJUST_PORTAL = 6;
 
     // Batch of individually signed records that should be used for update in 
     // the order they appear in the batch
