@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "./receipt_status_code.proto";
+import "dto/receipt_status_code.proto";
 
 package xrdna.blockchain;
 
