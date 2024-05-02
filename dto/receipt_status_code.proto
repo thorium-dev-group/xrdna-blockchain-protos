@@ -4,6 +4,9 @@ package xrdna.blockchain;
 
 /** Defines the possible event types. */
 enum ReceiptStatusCode {
+    /** The status code is not used. */
+    UNDEFINED = 0;
+
     /** The record was successfully validated and committed. */
     SUCCESS = 1;
 
