@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package xrdna.blockchain;
+
+/**
+* Header for all events.
+*/
+message RecordReceipt {
+    //status code for the original record
+    uint32 status_code = 1;
+
+    //hash of the original record
+    string record_hash = 2;
+
+    //status message for explanation (usually errors)
+    string status_message = 3;
+
+    //fee paid for storing the record, if any
+    string fee = 4;
+
+    //bytes consumed by the record
+    uint64 storage_consumed = 5;
+
+    //batch number of the record
+    uint64 batch_number = 6;
+
+    //index of the record in the batch
+    uint64 record_index = 7;
+
+    //timestamp the record was included in batch
+    uint64 timestamp = 8;
+}
