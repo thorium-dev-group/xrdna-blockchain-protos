@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+package xrdna.blockchain;
+
+
+message Experience {
+  // Defines a string field for vector address.
+  string vector_address = 1;
+
+  // Defines a string field for URL.
+  string url = 2;
+}
+
+// Defines a message for Portal.
+message Portal {
+  // Defines a string field for source vector address.
+  string home_vector_address = 1;
+
+  // Defines a string field for destination vector address.
+  string destination_vector_address = 2;
+}
+
+// Defines a message for Platform.
+message Platform {
+  // Defines a string field for the ID of the platform.
+  string id = 1;
+
+  // Defines a repeated field for experiences, allowing multiple Experience messages.
+  repeated Experience experiences = 2;
+
+  // Defines a repeated field for portals, allowing multiple Portal messages.
+  repeated Portal portals = 3;
+
+  // Platform's home url  
+  string url = 4
+  
+  //Platform's authorized signers. Should be an ethereum address
+  repeated string signers = 5
+
+  
+}
