@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package xrdna.blockchain;
+
+message Experience {
+  // Defines a string field for vector address.
+  string vector_address = 1;
+
+  // Defines a string field for URL.
+  string url = 2;
+}
