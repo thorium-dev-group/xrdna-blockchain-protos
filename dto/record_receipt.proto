@@ -7,7 +7,7 @@ package xrdna.blockchain;
 */
 message RecordReceipt {
     //status code for the original record
-    uint32 status_code = 1;
+    ReceiptStatusCode status_code = 1;
 
     //hash of the original record
     string record_hash = 2;
