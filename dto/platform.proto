@@ -8,7 +8,7 @@ import "dto/portal.proto";
 // Defines a message for Platform.
 message Platform {
   // Defines a string field for the ID of the platform.
-  string id = 1;
+  string vector_address = 1;
 
   // Defines a repeated field for experiences, allowing multiple Experience messages.
   repeated Experience experiences = 2;
