@@ -32,10 +32,10 @@ message Platform {
   repeated Portal portals = 3;
 
   // Platform's home url  
-  string url = 4
+  string url = 4;
   
   //Platform's authorized signers. Should be an ethereum address
-  repeated string signers = 5
+  repeated string signers = 5;
 
-  
+
 }
