@@ -19,4 +19,7 @@ message CreateEvent {
 
     // The home url of the platform
     string home_url = 4;
+
+    //name of the platform
+    string name = 5;
 }

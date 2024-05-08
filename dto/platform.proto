@@ -18,9 +18,12 @@ message Platform {
 
   // Platform's home url  
   string url = 4;
+
+  //name of the platform
+  string name = 5;
   
   //Platform's authorized signers. Should be an ethereum address
-  repeated string signers = 5;
+  repeated string signers = 6;
 
 
 }
